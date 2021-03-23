@@ -1,0 +1,8 @@
+<!doctype html><html>
+    <head>
+      <meta http-equiv="content-type" content="text/html; charset=utf-8">
+      <title>Context-Dependent Access</title>
+      <meta name="generator" content="CherryTree">
+      <link rel="stylesheet" href="res/styles3.css" type="text/css" />
+    </head>
+    <body><div class='page'><h1 class='title'>Context-Dependent Access</h1><br/><strong>Overview</strong><br />• Access restricted based on state of application<br />• Stops users performing actions in wrong order.<br />• e.g. stops shoppers from modifying car contents after checkout.<br /><br /><strong>Access control vulnerabilities in multi-step processes</strong><br />• Functions often exist over a series of steps<br />   ◇ Variety of options or inputs needs to be captures (review and confirming details)<br />• Sometimes, there are some steps that are protected and others that don&#39;t<br />   ◇ Test all steps to see where you can do some sneaky work<br /><br /><strong>Referer-based access control</strong><br />• Some sites have their access controls around the “Referer” HTTP header.<br />   ◇ Indicates the page where a request was initiated<br />   ◇ Sort of like the pathway -&gt; If the request was made from the /admin page, it can be implied that the user is an admin (but we know that is not the case)<br /><br /><strong>Location-based access control</strong><br />• Based on geo-location<br />• circumvented using web proxies, VPNs, manipulation of client-side geolocation mechanisms</div></body></html>
