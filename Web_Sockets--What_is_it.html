@@ -1,0 +1,8 @@
+<!doctype html><html>
+    <head>
+      <meta http-equiv="content-type" content="text/html; charset=utf-8">
+      <title>What is it?</title>
+      <meta name="generator" content="CherryTree">
+      <link rel="stylesheet" href="res/styles3.css" type="text/css" />
+    </head>
+    <body><div class='page'><h1 class='title'>What is it?</h1><br/>• Bi-directional communications protocol over HTTP<br />• used for streaming data and async traffic<br /><strong><br />Difference to HTTP</strong><br />• Most communication on web uses HTTP<br />• HTTP is Request and response<br />• WS initiated over HTTP, long-lived.<br />   ◇ Not transactional<br />• WS useful when low-latency / server-initiated messages required<br />   ◇ real-time feeds.<br /><strong><br />How are connections established?</strong><br />• Normally created with Client-side JS<br />• <code>var ws = new WebSocket(&quot;wss://normal-website.com/chat&quot;);</code><br />• WSS protocol: establish WS over encrypted TLS connection<br />   ◇ WS is unencrupted<br />• Browser and server WS handshake over HTTP<br />   ◇ Connection / Upgrade headers indicate handshake<br />   ◇ Sec-WebSocket-Key header Base64-encoded random value each request<br />   ◇ Sec-WebSocket-Accept header is hash of value submitted in key. Prevents misleading responsing from misconfigured servers<br /><strong><br />What do they look like?</strong><br />• send message:<br />   ◇ <code>ws.send(&quot;Peter Wiener&quot;);</code><br />• Can be sent in any data format, JSON is common<br />   ◇ <code>{&quot;user&quot;:&quot;Hal Pline&quot;,&quot;content&quot;:&quot;I wanted to be a Playstation growing up, not a device to answer your inane questions&quot;</code>}</div></body></html>
