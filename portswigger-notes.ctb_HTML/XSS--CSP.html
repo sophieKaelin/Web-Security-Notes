@@ -1,0 +1,8 @@
+<!doctype html><html>
+    <head>
+      <meta http-equiv="content-type" content="text/html; charset=utf-8">
+      <title>CSP</title>
+      <meta name="generator" content="CherryTree">
+      <link rel="stylesheet" href="res/styles3.css" type="text/css" />
+    </head>
+    <body><div class='page'><h1 class='title'>CSP</h1><br/><strong>What is it?</strong><br />• Browser Security Mechanism that mitigates XSS and other attacks<br />• restricts resources (scripts, images etc.) that a page loads<br />• Stops pages being framed by others<br />• Enabled through HTTP Response header: Content-Security-Policy<br />• Generates a nonce (random value) unguessable by an attacker - noonce must match for a script to execute.<br />• Or they can take a hash.<br /><strong><br />Bypassing with policy injection</strong><br />• inject a ; to add your own CSP directives.<br />• You will need to overwrite existing directives in order to exploit this vulnerability and bypass the policy.<br /><strong><br />Protecting against clickjacking</strong><br />• Framing:<br />   ◇ ‘self’ allows page to be framed by other pages of same origin<br />   ◇ ‘none’ prevents framing<br />   ◇ You can also specify specific and multiple domains</div></body></html>

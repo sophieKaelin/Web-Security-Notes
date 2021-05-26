@@ -1,0 +1,8 @@
+<!doctype html><html>
+    <head>
+      <meta http-equiv="content-type" content="text/html; charset=utf-8">
+      <title>Cicumventing common defences</title>
+      <meta name="generator" content="CherryTree">
+      <link rel="stylesheet" href="res/styles3.css" type="text/css" />
+    </head>
+    <body><div class='page'><h1 class='title'>Cicumventing common defences</h1><br/><strong>Blocklist based input filters</strong><br />• Sometimes 127.0.0.1 is blocked<br />   ◇ Try <code>2130706433</code><br />   ◇ Try <code>017700000001</code><br />   ◇ Try <code>127.1</code><br />   ◇ Create your own domain name that resolves to 127.0.0.1<br />   ◇ Obfuscate blocked strings with url encoding -&gt; double encode <br />   ◇ Try each one bit by bit before you visit sub directories<br /><br /><strong>Allowlist based input filters</strong><br />• Some allow input that matches, begins with/contains allowlist permitted values<br />   ◇ embed credentials into url before hostname <code>https://expected-host@evil-host</code><br />   ◇ use # to indicate URL fragmanet <code>https://evil-host#expected-host</code><br />   ◇ Leverage DNS naming to have DNS name you control <code>https://expected-host.evil-host</code>.<br />   ◇ URL encode characters to confuse parser<br /><br /><strong>Bypassing filters via open redirection</strong><br />• API used to make back-end HTTP request must support redirections<br />• Construct URL that satisfies filter &amp; refirests to back-end target<br />• Add a path=ashjfkhsalkjfsh at the end of your URL<br />   ◇ ACTUALLY: add it to your parameter if it is being passed in as a URL parameter<br />   ◇ Have some of the correct structure in case there is some checking.</div></body></html>

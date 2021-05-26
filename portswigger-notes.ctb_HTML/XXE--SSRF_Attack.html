@@ -1,0 +1,8 @@
+<!doctype html><html>
+    <head>
+      <meta http-equiv="content-type" content="text/html; charset=utf-8">
+      <title>SSRF Attack</title>
+      <meta name="generator" content="CherryTree">
+      <link rel="stylesheet" href="res/styles3.css" type="text/css" />
+    </head>
+    <body><div class='page'><h1 class='title'>SSRF Attack</h1><br/>• SSRF = Server side request forgery<br />• Server side app can be induced to make HTTP requests to any URL server can access<br />• Define external XML entity, use URL you want to taret &amp; defined entity within a data value =&gt; in application response.<br />   ▪ Impact = 2 way internaction with back-end system.<br />• If this didn&#39;t work, you could try a Blind SSRF<br />&lt;!DOCTYPE foo [ &lt;!ENTITY xxe SYSTEM &quot;http://internal.vulnerable-website.com/&quot;&gt; ]&gt;<br />• Keep repeating the request and seeing what is being returned from the server in the response<br />   ◇ Might be a directory from the URL -&gt; so then add that to the end of your website: http://internal.vulnerable-website.com/NEWFOLDER</div></body></html>

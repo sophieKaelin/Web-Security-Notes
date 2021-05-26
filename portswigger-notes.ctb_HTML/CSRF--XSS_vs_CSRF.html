@@ -1,0 +1,8 @@
+<!doctype html><html>
+    <head>
+      <meta http-equiv="content-type" content="text/html; charset=utf-8">
+      <title>XSS vs CSRF</title>
+      <meta name="generator" content="CherryTree">
+      <link rel="stylesheet" href="res/styles3.css" type="text/css" />
+    </head>
+    <body><div class='page'><h1 class='title'>XSS vs CSRF</h1><br/><strong>What is the difference?</strong><br />• XSS = attacker executes arbitrary JS within browser of victim<br />• CSRF = attacker induce victim user to perform actions that they don&#39;t intend to.<br />• XSS vulnerabilities more serious<br />• CSRF only applies to subset actions user can perform<br />   ◇ Apps often implement CSRF but overlook 1-2 actions<br />   ◇ Whereas, successful XSS can perform anything<br />• CSRF = “one-way” vulnerability<br />   ◇ Can induce a HTTP request, but can&#39;t retrieve the response<br /><strong><br />Can CSRF tokens prevent XSS attacks?</strong><br />• Some attacks can be prevented<br />• If an XSS attack requires a token, then attack is prevented<br />• CSRF tokens don&#39;t protect against stored XSS, mostly reflected.</div></body></html>
