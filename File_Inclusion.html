@@ -1,0 +1,8 @@
+<!doctype html><html>
+    <head>
+      <meta http-equiv="content-type" content="text/html; charset=utf-8">
+      <title>File Inclusion</title>
+      <meta name="generator" content="CherryTree">
+      <link rel="stylesheet" href="res/styles3.css" type="text/css" />
+    </head>
+    <body><div class='page'><h1 class='title'>File Inclusion</h1><br/><span style="text-decoration:underline;">Context</span><br />• Often used to load classes, share templates between web pages<br />• Vulnerability comes from lack of filtering of user-controlled parameters in file name.<br />• PHP:<br />   ◇ <code>Require, require_once, include, include_once</code><br />• LFI (Local) and RFI (Remote) vulnerability escalations<br />• PHP disables loading remote files by default<br />   ◇ <code>allow_url_include</code><br />• Use techniques from dir traversal to detect LFI<br />• Request external resources (other URLS) to detect RFI<br />   ◇  <a href="http://assets.pentesterlab.com/test_include.txt">http://assets.pentesterlab.com/test_include_system.txt</a>.</div></body></html>

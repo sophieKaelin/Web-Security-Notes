@@ -1,0 +1,8 @@
+<!doctype html><html>
+    <head>
+      <meta http-equiv="content-type" content="text/html; charset=utf-8">
+      <title>Prevention</title>
+      <meta name="generator" content="CherryTree">
+      <link rel="stylesheet" href="res/styles3.css" type="text/css" />
+    </head>
+    <body><div class='page'><h1 class='title'>Prevention</h1><br/>• validation of inputs by both OAuth provider and client application<br />   ◇ especially redirect-uri<br />• Up to devs to make OAuth flow secure (not much OAuth protections)<br />• Vulnerabilities can be client app or OAuth service.<br /><br /><span style="text-decoration:underline;">For OAuth service providers</span><br />• Require client app&#39;s register allowlist of valid redirect_uris<br />   ◇ byte for byte comparison to validate URI in incoming requests<br />• Enforce use of state param.<br />   ◇ bind value to hash of user&#39;s session cookie. Protection against CSRF attacks<br />   ◇ makes is difficult to use stolen auth codes<br />• On resource server, verify access token issued to same client_id that is making the request.<br />• Check request scope matches original scope requested when retrieving token.<br /><br /><span style="text-decoration:underline;">For OAuth client applications</span><br />• Use state parameter<br />• Send redirect_uri to /authorization and /token endpoint<br />• When it is difficult to keep the client_secret private, implement protections to limit impact of interception / leakage (PKCE (RFC7638))<br />• If using OpenID Connect id_token:<br />   ◇ ensure proper validation to JWS, JWE and OpenID Specifications<br />• stop authorization codes being leaked in referer headers (maybe when loading logos or other external scripts)</div></body></html>
