@@ -1,0 +1,8 @@
+<!doctype html><html>
+    <head>
+      <meta http-equiv="content-type" content="text/html; charset=utf-8">
+      <title>Things to Try</title>
+      <meta name="generator" content="CherryTree">
+      <link rel="stylesheet" href="res/styles3.css" type="text/css" />
+    </head>
+    <body><div class='page'><h1 class='title'>Things to Try</h1><br/><strong>Things to Try</strong><br /><br />• See if someone has typed their password into the shell rather than the password prompt<br />   ◇ View their history, and search for lines with a call to “passwd”<br />   ◇ grep passwd .bash_history<br />   ◇ line after passwd prompt : grep -A 1 passwd .bash_history<br />• View the /tmp and /var/tmp folder (maybe something wasn&#39;t cleared on reboot) <br />• View /etc/passwd or /etc/shadow<br />   ◇ If you get passwords, try cracking them in John <br />      ▪ (if they are DES) : john file.txt --format=descrypt<br />      ▪ (if they are md5) -&gt; usually has format $1$ : john file.txt --format=md5crypt<br />• cron system backup check<br />   ◇ Cron is used to backup files<br />   ◇ usually find in /etc/cron.daily<br />• Search for tomcat on the systems to find username and passwords<br />• Set what commands you can run, and with what privledges<br />   ◇ sudo -l<br />   ◇ then run as that user: sudo -u USER &lt;COMMAND&gt;<br />   ◇ Search how to get various shells using the commands being run (maybe vim or less?)<br />• Change permissions on files to run as root or another user.<br />   ◇ Permissions and chmod</div></body></html>

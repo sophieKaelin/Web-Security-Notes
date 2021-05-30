@@ -1,0 +1,8 @@
+<!doctype html><html>
+    <head>
+      <meta http-equiv="content-type" content="text/html; charset=utf-8">
+      <title>Databases</title>
+      <meta name="generator" content="CherryTree">
+      <link rel="stylesheet" href="res/styles3.css" type="text/css" />
+    </head>
+    <body><div class='page'><h1 class='title'>Databases</h1><br/><strong>My SQL</strong><br />• try accessing mysql root user (sometimes there is no password)<br />   ◇ mysql -u root<br />   ◇ jump around and look at tables and databses.<br />   ◇ show databases, use [database], show tables, queries<br />• Find Mysql passwords<br />   ◇ in /var/lib/mysql/mysql/user.MYD -&gt; crack that password using JOHN (in two different parts, merge for username:*pwd1pwd2)<br />• Command Injection through SQLI MySQL<br />   ◇ use the load_file function<br />   ◇ select load_file(&#39;&lt;FILE-PATH&gt;&#39;) as Result;<br /><br /><strong>Postgres</strong><br />• access DB by running “psql”<br />• \list<br />• \c [database] -&gt; selects your db<br />• \d lists tables<br />• don&#39;t forget ;<br />• Create table and read data into that table<br />   ◇ CREATE TABLE demo(t text);<br />   ◇ COPY demo from ‘&lt;FILEPATH&gt;’;<br />   ◇ SELECT * FROM demo;<br /><br /><strong>SQLite</strong><br />• sqlite3 &lt;filename&gt; loads the db<br />• .tables gets a list of the tables<br />• </div></body></html>
