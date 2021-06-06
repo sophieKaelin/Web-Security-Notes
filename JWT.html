@@ -1,0 +1,8 @@
+<!doctype html><html>
+    <head>
+      <meta http-equiv="content-type" content="text/html; charset=utf-8">
+      <title>JWT</title>
+      <meta name="generator" content="CherryTree">
+      <link rel="stylesheet" href="res/styles3.css" type="text/css" />
+    </head>
+    <body><div class='page'><h1 class='title'>JWT</h1><br/><span style="text-decoration:underline;">Types of Signatures</span><br />• Multiple signature methods to ensure integrity<br />   ◇ RSA (RS256) based -&gt; Private to encode and Public key to decode<br />   ◇ Elliptic curves<br />   ◇ HMAC (HS256) -&gt; Sign/Verify with same secret<br />   ◇ None<br /><br /><span style="text-decoration:underline;">Vulnerabilities</span><br />• None singing.<br />• If RSA is being used and alg type isn&#39;t verified<br />   ◇ change it to HMAC (since you only need public key, and public key for RSA is available to decode)</div></body></html>
