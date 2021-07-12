@@ -1,8 +1,0 @@
-<!doctype html><html>
-    <head>
-      <meta http-equiv="content-type" content="text/html; charset=utf-8">
-      <title>Blind vulnerabilities</title>
-      <meta name="generator" content="CherryTree">
-      <link rel="stylesheet" href="res/styles3.css" type="text/css" />
-    </head>
-    <body><div class='page'><h1 class='title'>Blind vulnerabilities</h1><br/><strong>Overview</strong><br />• When the back-end response is not returned in apps front-end<br />• Impact often lower than full SSRF vulnerabilities (one way nature)<br />• Could possibly get RCE<br /><strong><br />How to find and exploit</strong><br />• Use OAST techniques<br />• Trigger HTTP request to external system you control<br />• Burp Collaborator<br />• NOTE: Often HTTP blocked by network, but you can do a sneaky with DNS<br />• Change the referer to your website to check for the response <br />• If HTTP request observered coming in from the app, you can do an SSRF<br /><strong><br />How to attacks</strong><br />• Leverage to probe for other vulnerabilities on server<br />• Blindly sweep internal IP address space </div></body></html>

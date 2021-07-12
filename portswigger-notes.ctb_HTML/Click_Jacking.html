@@ -1,8 +1,0 @@
-<!doctype html><html>
-    <head>
-      <meta http-equiv="content-type" content="text/html; charset=utf-8">
-      <title>Click Jacking</title>
-      <meta name="generator" content="CherryTree">
-      <link rel="stylesheet" href="res/styles3.css" type="text/css" />
-    </head>
-    <body><div class='page'><h1 class='title'>Click Jacking</h1><br/><strong>What is it</strong>?<br />• interface-based attack<br />• user tricked to clicking on actionable content<br />• On hidden website<br />• Dependent on incorporation of invisible iframe containing a button<br />• iframe hidden behind (dodgy one)<br />• Different from CSRF attack<br />   ◇ user is required to perform an action.<br />   ◇ CSRF depends on forging entire request without knowledge of user.<br />• attack not mitigated by CSRF token<br /><strong><br />Prevention</strong><br />• Server driven protocols<br />• define / communicate constraints<br />• X-Frame-Options and CSP<br /><strong><br />X-Frame-Options</strong><br />• Website owner has control of use of iframes/objects in their page<br />• X-Frame-Options:<br />   ◇ deny<br />   ◇ sameorigin<br />   ◇ allow-from <a href="https://normal-website.com">https://normal-website.com</a><br />• Use in conjunction with CSP for multi-layer defense<br /><strong><br />CSP</strong><br />• detection and prevention mechanism<br />• provides client browser with info about permitting web resources<br />• incorporate frame-ancestors directive<br />   ◇ ‘none&#39; ‘self’ ‘normal-website.com’<br />   ◇ similar to X-Frame-Options</div></body></html>

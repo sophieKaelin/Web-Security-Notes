@@ -1,8 +1,0 @@
-<!doctype html><html>
-    <head>
-      <meta http-equiv="content-type" content="text/html; charset=utf-8">
-      <title>Construction</title>
-      <meta name="generator" content="CherryTree">
-      <link rel="stylesheet" href="res/styles3.css" type="text/css" />
-    </head>
-    <body><div class='page'><h1 class='title'>Construction</h1><br/><strong>Identify and evaluate unkeyed inputs</strong><br />• inject your payload in an unkeyed element<br />• add random inputs to request and observe impact on the response<br />   ◇ sometimes hard to notice, there are other techniques listed bellow.<br /><span style="text-decoration:underline;">Param Miner</span><br />• Extension in Burp<br />• Right click on request and select “Guess Headers”<br />• Logged in 2 places:<br />   ◇ BurpPRO: Issues pane<br />   ◇ BurpCOM: Extender&gt;Extensions&gt;Param Miner&gt;Output<br /><br /><strong><br />Elicit harmful response from back-end server</strong><br />• Evaluate how website processes it<br />• It is a potential entry for poisoning if:<br />   ◇ input reflected in response without sanitisation<br />   ◇ response used to dynamically generate other data<br /><strong><br />Get response cached</strong><br />• success depends on file extensions, content type, route, status code, response headers</div></body></html>

@@ -1,8 +1,0 @@
-<!doctype html><html>
-    <head>
-      <meta http-equiv="content-type" content="text/html; charset=utf-8">
-      <title>Stored</title>
-      <meta name="generator" content="CherryTree">
-      <link rel="stylesheet" href="res/styles3.css" type="text/css" />
-    </head>
-    <body><div class='page'><h1 class='title'>Stored</h1><br/><strong>Stored</strong> <strong>XSS</strong><br />• AKA Persistant XSS. <br />• Receive data from untrusted source and includes that data in HTTP response<br />• Control a script that is executed whenever another user accesses the site<br />• Example: posting a comment on a blog. If you post a script, sometimes that script will run whenever another person accesses that blog.<br />• Difference to Reflected: enables attacks that are self-contained within the application<br />   ◇ No external way of inducing another user to participate (reflected must be triggered by an action. The action for stored, is just accessing the webpage)<br />• Only impacts users accessing site (logged in)<br />• Test entry and exit points &amp; locate the links<br />• Entries:<br />	• Params in URL query string/message body<br />	• URL file path<br />	• HTTP Request headers</div></body></html>

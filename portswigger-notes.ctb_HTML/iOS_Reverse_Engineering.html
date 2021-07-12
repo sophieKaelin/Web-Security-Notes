@@ -1,8 +1,0 @@
-<!doctype html><html>
-    <head>
-      <meta http-equiv="content-type" content="text/html; charset=utf-8">
-      <title>iOS Reverse Engineering</title>
-      <meta name="generator" content="CherryTree">
-      <link rel="stylesheet" href="res/styles3.css" type="text/css" />
-    </head>
-    <body><div class='page'><h1 class='title'>iOS Reverse Engineering</h1><br/>• iOS/Android app is a binary<br />• Few more steps in comparison to web testing<br />• Jailbreak iOS / root android first<br />   ◇ most apps have detection for this<br />   ◇ you need to bypass that before you test<br />   ◇ checkrain, bootrain, uncover applications for jail breaking<br />   ◇ exploit something in bootloader, inject the exploit (respring) -&gt; can&#39;t restart the phone after that<br />• Once jailbroken, it installs Cydia.<br />   ◇ Package manager/app store<br />• Equivallent to Cydia in Android is Magisk<br />• Certificate pinning<br />   ◇ Cert list in browser<br />   ◇ install your own root CA -&gt; browser thinks you are safe.<br />   ◇ hard coding an expected cert into the binary<br />   ◇ certain apps will only send traffic to approved servers -&gt; hard code your own cert to sit and MNM -&gt; allows you to intercept traffic<br />   ◇ on iOS -&gt; iOS SSL kill switch, Liberty<br />• Decompilation<br />   ◇ IOS is hard<br />   ◇ Ida (paid/expensive tool for reverse enginerring)<br />   ◇ Ghidra (open source equivalent by RSA)<br />• Reversing application binary<br />   ◇ Jailbreak/ root device<br />   ◇ decompile (easy in android, way harder for iOS)<br />   ◇ </div></body></html>

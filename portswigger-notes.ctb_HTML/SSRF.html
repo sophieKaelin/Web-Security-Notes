@@ -1,8 +1,0 @@
-<!doctype html><html>
-    <head>
-      <meta http-equiv="content-type" content="text/html; charset=utf-8">
-      <title>SSRF</title>
-      <meta name="generator" content="CherryTree">
-      <link rel="stylesheet" href="res/styles3.css" type="text/css" />
-    </head>
-    <body><div class='page'><h1 class='title'>SSRF</h1><br/><strong>What is it?</strong><br />• induce server-side application to make HTTP requests to domain of attackers choosing<br />• maker server make connection back to itself, other web services within organisation or third party stuff.<br /><br /><strong>Impact?<br /></strong>• Result in unauthorised actions/access<br />• May allow attacker to perform arbitrary command execution (OS COM INJ topic)<br /><strong><br />Finding Hidden Attack surface for SSRF Vulnerabilities</strong><br />• Mostly easy to spot (traffic involves request parameters)<br />• Partial URL&#39;s in requests<br />   ◇ Sometimes app places hostname or partial URL in request parameters<br />   ◇ then incorporated server side.<br />   ◇ Hard unless you know the entire URL<br />• URLs within Data formats<br />   ◇ XML, if server processing, could be subject to XXE<br />• Referer Header<br />   ◇ If server side analystics software tracks visitors -&gt; might visit your dody site</div></body></html>
