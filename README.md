@@ -12,3 +12,6 @@
 * [DNS Exfiltration Explained](https://www.youtube.com/watch?v=jEyDwFLLIAA&list=WL&index=39)
 * [Learn how easy it is to bypass firewalls using dns tunneling and also how to block it](https://medium.com/@galolbardes/learn-how-easy-is-to-bypass-firewalls-using-dns-tunneling-and-also-how-to-block-it-3ed652f4a000)
 * [Years of DNS data exfiltration why how and whats next](https://blogs.akamai.com/2017/06/-20-years-of-dns-data-exfiltration-why-how-and-whats-next.html)
+
+### Articles on setting up tools
+* [How to Import requests into POSTMAN from JSON File](https://developer.ft.com/portal/docs-start-install-postman-and-import-request-collection)
