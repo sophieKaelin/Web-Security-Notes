@@ -15,3 +15,4 @@
 
 ### Articles on setting up tools
 * [How to Import requests into POSTMAN from JSON File](https://developer.ft.com/portal/docs-start-install-postman-and-import-request-collection)
+* [Removing "Success.txt" in Firefox Network Logs](https://support.mozilla.org/en-US/questions/1157121)
