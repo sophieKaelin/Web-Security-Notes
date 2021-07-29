@@ -1,0 +1,8 @@
+<!doctype html><html>
+    <head>
+      <meta http-equiv="content-type" content="text/html; charset=utf-8">
+      <title>Scanning</title>
+      <meta name="generator" content="CherryTree">
+      <link rel="stylesheet" href="res/styles3.css" type="text/css" />
+    </head>
+    <body><div class='page'><h1 class='title'>Scanning</h1><br/><span style="text-decoration:underline;">Definitions</span><br /><strong>Passive Scan</strong>- look at existing requests coming through and scanning them for vulnerabilities<br /><strong>Active Scan</strong> - Sends manipulated requests to the server in order to expose vulnerabilities. Need to be careful<br /><br /><span style="text-decoration:underline;">Active Scan in Burp</span><br />• Make sure to set your scope in Target -&gt; site map (should have done this when setting up burp)<br />• Send request to Intruder to define insertion points<br />• Right Click -&gt; Scan defined Insertion points -&gt; scan configs -&gt; new<br />   ◇ Audit Optimisation -&gt; turn off any redirections<br />   ◇ Resource pool -&gt; create new resource pool (for throttling traffic) stops from hammering with requests<br />      ▪ Max concurrent requests = 2<br />      ▪ Delay = 200<br />• Scan progress and results will appear in dashboard<br />• Choose a good request <br />   ◇ probably not one that creates/updates/deletes data<br />   ◇ GET requests are good<br />   ◇ Choose interesting ones (e.g. ones that pull data from db&#39;s as opposed to plain HTML pages)</div></body></html>
