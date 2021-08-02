@@ -18,6 +18,8 @@
    	* cmd -> sekurlsa::logonpasswords
 * BloodHound will map out an AD
    	* Find shortest path to DA
+* Dnsmasq
+	* Quick DNS server
 * PingCastle
    	* Network enumeration benchmark
    	* Scores the network, highlights insecurities
