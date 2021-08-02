@@ -27,7 +27,14 @@
 #       exit 1
 #       ;;
 #   esac
+
+# Convert file extension
 for f in MD/*
   do echo "Converting $f file..."
   mv $f "${f%.*}.md"
-  done 
+done
+
+# Convert Bullet Points
+perl -p -i -w -e "s/•/*/;" MD/*
+perl -p -i -w -e "s/◇/\t*/;" MD/*
+perl -p -i -w -e "s/▪/\t\t*/;" MD/*
