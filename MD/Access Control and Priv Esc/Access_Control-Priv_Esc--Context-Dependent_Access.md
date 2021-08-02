@@ -18,4 +18,3 @@ Referer-based access control
 Location-based access control
 * Based on geo-location
 * circumvented using web proxies, VPNs, manipulation of client-side geolocation mechanisms
-
