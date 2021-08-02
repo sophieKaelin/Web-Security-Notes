@@ -1,5 +1,11 @@
 #! /bin/bash
 
+# NOTES: Uploading to git has changed LF to CRLF.
+# To run this script, make sure to change line endings to Unix, not Windows
+# You can do this in Sublime text via View>Line Endings
+# You can do this in Notepad++ via Edit>EOL Conversion
+
+# Section would be for specifying a file path. File path need not be specified for this repository
 # while getopts ":a:h" opt; do
 #   case $opt in
 #     a)
