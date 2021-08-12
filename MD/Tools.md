@@ -6,6 +6,8 @@
    	* Then it makes second connectoin between itself and the server
       		* That's why you need a certficiate in the browser, otherwise the browser may think someone is performing a PITM attack
       		* Sometimes says portswigger, other times burp. Browser becomes suspicious of this.
+	* Project Options -> Override user options (for upstream proxies)
+
 * How to download things without getting flagged by antivirus
    	* Add temporary virus exclusion/ threat protection
    	* Create a folder that won't get scanned
