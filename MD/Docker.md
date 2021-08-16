@@ -6,4 +6,10 @@
 ## Intro
 
 ### Why Docker?
-* 
+* Speed is improved.
+* Consistency and centrality.
+* Software requires maintainence, so much software.
+    * Docker frees up time.
+* Yes less operating systems to run everything -> infrastructure savings
+* Largely open source
+* landscape.cncf.io
