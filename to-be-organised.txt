@@ -1,0 +1,87 @@
+
+Hello. Here are some notes I made but haven't had the time to sort out into their categories. I'll sort this out later and delete this file, hopefully... at some point.
+
+* Why is it important to have the correct path in a cookie
+- ensures it isn't sent anywhere else
+
+* HTTP means not accessible by JS
+* Secure means only over HTTPS
+
+* Preventing DOM XSS 
+- must be read as text -> inner text as opposed to HTML
+- Input validation
+- encoding
+- avoid dangerous methods like eval() 
+
+* HSTS 
+- Response header that tells browser it should load it over HTTPS and only with a valid cert
+- Of you visit HTTP, if it returns HSTS header, browser will automatically go to the HTTPS version
+- Max age, is how long you can access it over HTTPS
+
+IDOR
+* Access Control Issue
+
+Forceful browsing v IDOR
+* Parameter based v page based
+
+CSRF
+* Trick > Forced
+* Explain what you can do with it? Change a password
+
+SQLI
+* Prepared statememnts - marsh input data from the user into a format that can't be injected into.
+* Character filtering.
+
+XSS
+* DOM Can't be detected by the server which would make it more dangerous with reflected.
+
+JWT
+* Encryption v Hash - Hash is one way, encryption v decryption
+* Hashing -> you are checking if something hasn't been changed
+* Key Confusion= RSA to HMAC
+
+Deserialisation
+* Java -> write java object to disk = serialisation
+* Store to disk -> run -> deserialise
+* Same thing, but instead over a byte stream
+* You can open the byte stream. It's not encrypted or anything, just confusing
+* Look at the request -> use tool to interpret and inject your own stuff
+* What it looks like in a HTTP request and how to attack it
+* Inject your own serialised payload, it's interpreted on the backend
+* Object is being convereted to byte stream, it's user modifiable so you can easily inject something
+* how to fix: override the methods in the serialisation libraries so you can be more specific on which behaviours you want. "Which objects specificallly do you want to deserialise".
+
+CSP
+* What this page is allowed to load internally. 
+* Everything this page loads?
+* The site prevents itself from loading resources from another site.
+* Why do we care? Stops unsafe things from being loaded (scripts) "unsafe inline"
+* Controls what content you can load on a page -> e.g. you can prevent scripts from being loaded on your host which may lead to XSS
+-> Mozilla help pages.
+
+CORS
+* Allows other sites to read from it and access the private information
+* What people can load from you, and what specific things you can load from another website.
+* CORS is a relaxation of SOP (Same origin policy)
+* look into how CDN's work
+
+* What you're allowed to reach out to.
+* OPTIONS request, pre flight request to see if you are allowed to access a resource.
+* What you're loading on your page with the permission of the page you're loading it from.
+
+Wildcard Certificate
+* in an SSL Scan
+* When site certificate is overlly permissive
+* Wildcard certificate domains is a certificate. Instead of two domains test.example.com and main.example.com do *.example.com
+	- Compromised for one, compromised for all
+	- Able to create your own subdomain.
+	
+XXE
+* If you mention DOS, mention you'd do it safely with less levels
+* DTD Processsing and just turn it off
+
+
+Cookie Attributes
+* PATH VS Domain
+* path = the directory
+* Domain = subdomains are included 
