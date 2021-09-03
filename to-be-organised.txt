@@ -85,3 +85,11 @@ Cookie Attributes
 * PATH VS Domain
 * path = the directory
 * Domain = subdomains are included 
+
+
+* Spidering/Crawling
+- Active clicks on links, passive just creates a list of all the links
+
+* CSRF
+- token must be in the body
+- if it's in the cookie, there's no point because the goal is to steal a users session cookie. Also, easy to access from URL parameter
