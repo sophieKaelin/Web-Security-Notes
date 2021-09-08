@@ -15,6 +15,7 @@
 * [Payload All The Things](https://github.com/swisskyrepo/PayloadsAllTheThings)
 * [Linux Priv Esc Cheat Sheet](blog.g0tmi1k.com/2011/08/basic-privilege-escalation)
 * [How SSL/TLS Works](https://english.ncsc.nl/publications/publications/2019/juni/01/it-security-guidelines-for-transport-layer-security-tls)
+* [Insecure Deserialisation](https://www.securecodewarrior.com/blog/coders-conquer-security-share-learn-series-insecure-deserialization)
 
 ### Articles on setting up tools
 * [How to Import requests into POSTMAN from JSON File](https://developer.ft.com/portal/docs-start-install-postman-and-import-request-collection)
