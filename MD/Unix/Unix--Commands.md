@@ -29,6 +29,8 @@ Commands
    	* If you can run commands for another user do: sudo -u <user> /bin/bash
 * Run a bash shell
    	* !/bin/bash
+* searchsploit
+	* can install on kali linux, you can search for a service and it'll tell you about exploits associated with it
 
 Syntax/Special Characters
 * ^ = means start of the line
