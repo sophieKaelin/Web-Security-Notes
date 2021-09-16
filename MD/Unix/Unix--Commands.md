@@ -5,6 +5,7 @@ Commands
 * If you don't have permission to access a folder, but you know there is a file in the folder, try cating it from the parent dir
 * View history of bash shell: find .bash_history
 * search for file: find -name <file-name>
+* Remove directories from search: find / -path <DIR> -prune -o -path <DIR> -prune -o
 * search for multiple files in directories: find <dir> -name <file-name>
 * search for keywords: grep [PATTERN] {} \;
 * search within a find request: find <dir> -name <FILE-NAME> -exec grep [PATTERN] {} \;
