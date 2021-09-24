@@ -30,13 +30,13 @@ I never worked out what **41567** was doing.
 
 The two services I wanted to look at in more detail were ADB and ES File Explorer. I'd never played with Android devices before, so I looked a little more into what each of the services did. I also searched if there were any known vulnerabilities/CVE's associated with them. And ... ✨***VOILA***✨
 
-<img src="../images/HTB-Explore/ES-CVE.png" width=70%>
+<img src="/images/HTB-Explore/ES-CVE.png" width=70%>
 
 ES File explorer had a CVE associated with it ([CVE-2019-6447](https://www.cvedetails.com/cve/CVE-2019-6447)). The exploit allows remote users to read arbitraty files from anywhere on the network over port **59777**.
 
 Digging around more, I found an [exploit script](https://www.exploit-db.com/exploits/50070) on exploit-db. I played around with the script and saw it can list and retrieve files from the system. Eventually I found a file called `creds.jpg` which looked promising.
 
-<img src="../images/HTB-Explore/script-listPics.png" width=70%>
+<img src="/images/HTB-Explore/script-listPics.png" width=70%>
 
 I could retrieve the file by running:  
 `python3 exploit-script.py getFile 10.10.10.247 /storage/emulated/0/DCIM/creds.jpg
@@ -44,7 +44,7 @@ I could retrieve the file by running:
 
 The file contained what looked like a username and password (*GASP!*).
 
-<img src="../images/HTB-Explore/kristi.png" width=70%>
+<img src="/images/HTB-Explore/kristi.png" width=70%>
 
 `kristi:Kr1sT!5h@Rp3xPl0r3!`
 
@@ -57,11 +57,11 @@ But when entering the password didn't work I looked at how else I could use thes
 ## Privilege Escalation
 Remembering that an SSH port was open on 2222, I tried using these creds to SSH onto the machine. And after many failed attemptes at guessing whether the password contains O's or 0's, and l's, 1's or I's, I could access the device!
 
-<img src="../images/HTB-Explore/ssh.png" width=70%>
+<img src="/images/HTB-Explore/ssh.png" width=70%>
 
 Once I'd fought with `find` and `grep` (both of which I can never seem to get to work properly) I could see the flag inside `sdcard/user.txt`
 
-<img src="../images/HTB-Explore/user.png" width=70%>
+<img src="/images/HTB-Explore/user.png" width=70%>
 
 <img src="https://media.giphy.com/media/izOQECJfXMxgc/giphy.gif?cid=ecf05e47nm39w13yhgp9ygockdu6f49bx0m0jawollocp7op&rid=giphy.gif&ct=g" width=50%>
 
@@ -72,7 +72,7 @@ At this point I had access to the device through ssh, and I knew I had an ADB se
 
 Once port forwarding was set up, I was able to run adb commands on the device, gain a shell, escalate that shell to root and search for the root.txt file.
 
-<img src="../images/HTB-Explore/root.png" width=70%>
+<img src="/images/HTB-Explore/root.png" width=70%>
 
 <img src="https://media.giphy.com/media/TOWeGr70V2R1K/giphy.gif?cid=ecf05e471pv9a07g3dv65iio0was4dznxicvbdr2633q8e3n&rid=giphy.gif&ct=g" width=50%>
 
