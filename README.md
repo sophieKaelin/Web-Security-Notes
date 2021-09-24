@@ -16,11 +16,12 @@
 * [Linux Priv Esc Cheat Sheet](blog.g0tmi1k.com/2011/08/basic-privilege-escalation)
 * [How SSL/TLS Works](https://english.ncsc.nl/publications/publications/2019/juni/01/it-security-guidelines-for-transport-layer-security-tls)
 * [Insecure Deserialisation](https://www.securecodewarrior.com/blog/coders-conquer-security-share-learn-series-insecure-deserialization)
-* [How to Hack APISin 2021](https://labs.detectify.com/2021/08/10/how-to-hack-apis-in-2021/)
+* [How to Hack APIS in 2021](https://labs.detectify.com/2021/08/10/how-to-hack-apis-in-2021/)
 
 ### Articles on setting up tools
 * [How to Import requests into POSTMAN from JSON File](https://developer.ft.com/portal/docs-start-install-postman-and-import-request-collection)
 * [Removing "Success.txt" in Firefox Network Logs](https://support.mozilla.org/en-US/questions/1157121)
+* [Fiddler: NTLM authentication when Burp Suite fails](https://techblog.mediaservice.net/2017/05/fiddler-ntlm-authentication-when-burp-suite-fails/)
 
 ### Resources
 * [Webhook - Analyse Traffic sent to your own server](webhook.site)
