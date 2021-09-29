@@ -39,4 +39,5 @@
    	* will give you a screenshot of each page and the HTTP code.
 * CrossLinked
    	* Dump emails from a domain by browsing linkedIN
-
+* searchsploit
+	* can install on kali linux, you can search for a service and it'll tell you about exploits associated with it
