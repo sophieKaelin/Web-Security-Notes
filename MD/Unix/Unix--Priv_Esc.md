@@ -35,5 +35,5 @@ https://github.com/TCM-Course-Resources/Linux-Privilege-Escalation-Resources
     * Update to be `PASSWORD=` for less instances
 * `locate password | more`
     * files maybe containing a password
-* `find / -name authorized_keys 2> /dev/null` or `
+* `find / -name authorized_keys 2> /dev/null` or `find / -name id_rsa 2> /dev/null`
     * find SSH keys?
