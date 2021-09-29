@@ -28,3 +28,12 @@ https://github.com/TCM-Course-Resources/Linux-Privilege-Escalation-Resources
 * `ip route` <- which networks do you have access to?
 * `arp -a` or `ip neigh`
 * `netstat -ano` <- what ports are open and communications exist. What machines are talking to us?
+
+### Finding Passwords and sensitive files
+* `grep --color=auto -rnw '/' -ie "PASSWORD" --color=always 2> /dev/null`
+    * will search for instances of the word "password" and colour it in red so it's easy to view
+    * Update to be `PASSWORD=` for less instances
+* `locate password | more`
+    * files maybe containing a password
+* `find / -name authorized_keys 2> /dev/null` or `
+    * find SSH keys?
