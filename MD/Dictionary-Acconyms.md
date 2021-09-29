@@ -1,25 +1,26 @@
 # Dictionary/Acconyms
- WAF= Web Application Firewall
-CSP = Content Security Policy
-LFI = Local File Inclusion
-RCE = Remote code execution
-SSRF = Server side request forgery
-DOS = Denial of Service
-FQDN = fully qualified domain name
-DAC = Discretionary Access Control
-MAC = Mandatory Access Control
-RBAC = Role-based Access Control 
-IDOR = Insecure Direct Object References
-URI = Unique Resource Identifier
-DA = Domain Admin
-ACAO = Access-Control-Allow-Origin (cors header)
-ACAC = Access-Control-Allow-Credentials (cors header)
-CSRF = Cross Site Request Forgery
-PRNG = pseudo-random number generator
-XHR = XMLHttpRequest
-SSRF = Server-side request forgery
-RCE = Remote Code execution (Arbitrary Code execution)
-OAST = Out of Band application security testing.
+WAF= Web Application Firewall  
+CSP = Content Security Policy  
+LFI = Local File Inclusion  
+RCE = Remote code execution  
+SSRF = Server side request forgery  
+DOS = Denial of Service  
+FQDN = fully qualified domain name  
+DAC = Discretionary Access Control  
+MAC = Mandatory Access Control  
+RBAC = Role-based Access Control   
+IDOR = Insecure Direct Object References  
+URI = Unique Resource Identifier  
+DA = Domain Admin  
+ACAO = Access-Control-Allow-Origin (cors header)  
+ACAC = Access-Control-Allow-Credentials (cors header)  
+CSRF = Cross Site Request Forgery  
+PRNG = pseudo-random number generator  
+XHR = XMLHttpRequest  
+SSRF = Server-side request forgery  
+RCE = Remote Code execution (Arbitrary Code execution)  
+OAST = Out of Band application security testing.  
+EXIF = Exhangeable Image File Format (defines specific info related to an image captured by a camera e.g. time, location)
 
 Allow list = white list (better terminiology)
 
