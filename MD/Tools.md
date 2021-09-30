@@ -41,3 +41,5 @@
    	* Dump emails from a domain by browsing linkedIN
 * searchsploit
 	* can install on kali linux, you can search for a service and it'll tell you about exploits associated with it
+* [ImageMagick](https://imagemagick.org/index.php)
+	* modify images to corrupt them (load xss explotis?)
