@@ -22,6 +22,7 @@
 * [How to Import requests into POSTMAN from JSON File](https://developer.ft.com/portal/docs-start-install-postman-and-import-request-collection)
 * [Removing "Success.txt" in Firefox Network Logs](https://support.mozilla.org/en-US/questions/1157121)
 * [Fiddler: NTLM authentication when Burp Suite fails](https://techblog.mediaservice.net/2017/05/fiddler-ntlm-authentication-when-burp-suite-fails/)
+* [Install tools using PIP when you have no internet access](https://stackoverflow.com/questions/11091623/how-to-install-packages-offline)
 
 ### Resources
 * [Webhook - Analyse Traffic sent to your own server](webhook.site)
