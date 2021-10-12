@@ -1,5 +1,5 @@
 # File Inclusion
-Context
+* [CHECKLIST](https://www.onsecurity.io/blog/file-upload-checklist/#magic-byte-forgery)
 * Often used to load classes, share templates between web pages
 * Vulnerability comes from lack of filtering of user-controlled parameters in file name.
 * PHP:
