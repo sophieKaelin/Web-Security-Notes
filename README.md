@@ -23,6 +23,7 @@
 * [Removing "Success.txt" in Firefox Network Logs](https://support.mozilla.org/en-US/questions/1157121)
 * [Fiddler: NTLM authentication when Burp Suite fails](https://techblog.mediaservice.net/2017/05/fiddler-ntlm-authentication-when-burp-suite-fails/)
 * [Install tools using PIP when you have no internet access](https://stackoverflow.com/questions/11091623/how-to-install-packages-offline)
+* [Deleting mounted network share credentials Windows](https://serverfault.com/questions/213765/how-do-i-remove-login-credentials-for-a-network-location-in-win7)
 
 ### Resources
 * [Webhook - Analyse Traffic sent to your own server](webhook.site)
