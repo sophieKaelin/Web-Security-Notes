@@ -17,6 +17,7 @@
 * [How SSL/TLS Works](https://english.ncsc.nl/publications/publications/2019/juni/01/it-security-guidelines-for-transport-layer-security-tls)
 * [Insecure Deserialisation](https://www.securecodewarrior.com/blog/coders-conquer-security-share-learn-series-insecure-deserialization)
 * [How to Hack APIS in 2021](https://labs.detectify.com/2021/08/10/how-to-hack-apis-in-2021/)
+* [SSL Scan False Positives](https://node-security.com/posts/tls-server-signature-algorithm/)
 
 ### Articles on setting up tools
 * [How to Import requests into POSTMAN from JSON File](https://developer.ft.com/portal/docs-start-install-postman-and-import-request-collection)
